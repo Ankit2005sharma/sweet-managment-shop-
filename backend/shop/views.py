@@ -3,16 +3,15 @@ from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework import status
 
-from .serializers import RegisterSerializer
+from .serializers import RegisterSerializer, UserSerializer
+
 
 @api_view(["POST"])
-@permission_classes([AllowAny])   # <-- important
+@permission_classes([AllowAny])
 def register_view(request):
+    """Register a new user and return minimal profile details."""
     serializer = RegisterSerializer(data=request.data)
     if serializer.is_valid():
         user = serializer.save()
-        return Response(
-            {"id": user.id, "username": user.username, "email": user.email},
-            status=status.HTTP_201_CREATED
-        )
+        return Response(UserSerializer(user).data, status=status.HTTP_201_CREATED)
     return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)

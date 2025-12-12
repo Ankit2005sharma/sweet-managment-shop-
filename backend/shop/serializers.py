@@ -3,7 +3,16 @@ from django.contrib.auth import get_user_model
 
 User = get_user_model()
 
+
+class UserSerializer(serializers.ModelSerializer):
+    """Used to return user details in responses."""
+    class Meta:
+        model = User
+        fields = ("id", "username", "email")
+
+
 class RegisterSerializer(serializers.ModelSerializer):
+    """Handles user creation."""
     password = serializers.CharField(write_only=True)
 
     class Meta:
