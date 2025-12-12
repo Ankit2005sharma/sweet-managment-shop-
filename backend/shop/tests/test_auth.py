@@ -1,3 +1,4 @@
+
 import pytest
 from rest_framework.test import APIClient
 
@@ -10,7 +11,7 @@ def test_user_register_and_login():
         "username": "ankit",
         "password": "TestPass123!",
         "email": "ankit@example.com"
-    })
+    }, format="json")
 
     assert res.status_code == 201
 
@@ -18,8 +19,9 @@ def test_user_register_and_login():
     res2 = client.post("/api/auth/login/", {
         "username": "ankit",
         "password": "TestPass123!"
-    })
+    }, format="json")
 
     assert res2.status_code == 200
-    assert "access" in res2.json()
-    assert "refresh" in res2.json()
+    data = res2.json()
+    assert "access" in data
+    assert "refresh" in data
