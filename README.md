@@ -75,13 +75,10 @@ Runs at: `http://localhost:3000`
 ![Login Page](assets/login.png)
 
 ### Sweet List
-![Sweet List](assets/sweets.png)
-
-### Order Flow
-![Order Flow](assets/orders.png)
+![Sweet List](assets/sweets_list.png)
 
 ### Registration Page
-![Registration Page](assets/register.png)
+![Registration Page](assets/registration.png)
 
 ### Admin Dashboard
 ![Admin Dashboard](assets/admin.png)
