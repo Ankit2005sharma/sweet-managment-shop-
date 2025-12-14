@@ -1,8 +1,8 @@
-# 🍬 Sweet Shop Management System
+#  Sweet Shop Management System
 
 A full-stack Sweet Shop Management System built using Django REST Framework (backend) and React + Vite (frontend). The project focuses on backend correctness, test-driven development (TDD), and clean API design, followed by frontend integration.
 
-## ✨ Key Features
+## Key Features
 
 ### Backend
 - Custom user model with email-based authentication
@@ -20,12 +20,12 @@ A full-stack Sweet Shop Management System built using Django REST Framework (bac
 - Axios-based API integration
 - Clean and simple UI
 
-## 🧱 Tech Stack
+## Tech Stack
 
 **Backend:** Python, Django, Django REST Framework, SimpleJWT, SQLite, Pytest  
 **Frontend:** React, Vite, Axios, React Router
 
-## ⚙️ Running the Project Locally
+## Running the Project Locally
 
 ### Backend
 
@@ -59,7 +59,7 @@ Runs at: `http://localhost:3000`
 | `/api/orders/` | POST | Place order |
 | `/api/orders/` | GET | View orders |
 
-## 🧪 Testing
+##  Testing
 
 - Backend developed using Test-Driven Development (TDD)
 - Tests written before implementation
@@ -69,7 +69,7 @@ Runs at: `http://localhost:3000`
   - Order logic & stock validation
 - All tests pass successfully
 
-## 📸 Screenshots
+## Screenshots
 
 ### Login Page
 ![Login Page](assets/login.png)
@@ -83,7 +83,7 @@ Runs at: `http://localhost:3000`
 ### Admin Dashboard
 ![Admin Dashboard](assets/admin.png)
 
-## 🤖 My AI Usage
+##  My AI Usage
 
 ### AI Tools Used
 - ChatGPT (OpenAI)
@@ -115,7 +115,7 @@ Runs at: `http://localhost:3000`
 
 AI significantly improved development speed, especially for repetitive and boilerplate tasks. However, I ensured that I fully understood and validated all AI-assisted code. AI acted as a supporting developer tool, while architecture, logic, testing strategy, and debugging decisions were mine. The AI helped me explore different approaches and catch potential issues early, but I made all final implementation decisions.
 
-## 📝 Submission Explanation
+## Submission Explanation
 
 This project was developed with a strong focus on backend correctness and test-driven development. I designed the data models, API structure, authentication flow, and business logic myself, following a RED → GREEN → REFACTOR TDD cycle using pytest. 
 
@@ -127,7 +127,7 @@ AI tools were used responsibly to assist with:
 
 All AI-assisted code was thoroughly reviewed, modified, and integrated by me to ensure correctness, clarity, and maintainability. I maintained full control over the project architecture, design decisions, and implementation strategy. The AI served as a productivity tool, not a replacement for critical thinking and problem-solving.
 
-## 🚀 Future Enhancements
+## Future Enhancements
 
 - Add order history tracking
 - Implement payment gateway integration
